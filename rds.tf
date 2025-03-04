@@ -18,7 +18,7 @@ resource "aws_db_instance" "portfolio_db" {
   auto_minor_version_upgrade = false
   performance_insights_enabled = false
   monitoring_interval    = 0
-  
+                      
   # Security settings
   vpc_security_group_ids = [aws_security_group.rds_sg.id]
   db_subnet_group_name   = aws_db_subnet_group.rds_subnet_group.name
